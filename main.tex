@@ -1,0 +1,265 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=1cm, a4paper]{geometry}
+
+
+%------------------------------------------------------------------ Variablen
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\title{Enver Bashirov CV}
+% Credits to \author{\LaTeX{} Ninja}
+% \date{June 2019}
+\author{\LaTeX{} Enver Bashirov}
+\date{August 2023}
+
+\pagestyle{empty}
+\begin{document}
+
+
+\thispagestyle{empty}
+%-------------------------------------------------------------
+
+\section*{Start}
+
+\simpleheader{headercolour}{Enver}{BASHIROV}{Machine Learning Engineer}{white}
+
+%------------------------------------------------
+
+% this has to be here so the paracols starts..
+\subsection*{}
+\vspace{4em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+
+\footnotesize
+{\setasidefontcolour
+\flushright
+\begin{center}
+    \roundpic{img/profile.jpg}
+\end{center}
+
+\bg{cvgreen}{white}{About me}\\[0.5em]
+
+{\footnotesize Passionate about leveraging cutting-edge technology to solve real-world challenges. With a strong foundation in software engineering and AI, I thrive on creating intelligent systems that bring innovation to life. }
+\bigskip
+
+\bg{cvgreen}{white}{Personal} \\[0.5em]
+Enver Bashirov
+
+Azerbaijani 
+
+31 10 1994
+
+\bigskip
+
+\bg{cvgreen}{white}{Areas of Specialization} \\[0.5em]
+
+Software Engineering 
+
+Machine Learning 
+
+Computer Vision
+
+\bigskip
+
+\bg{cvgreen}{white}{Languages} \\[0.5em]
+\begin{tabular}{@{}l@{} | c}
+\textbf{Turkish} & \scalebox{0.9}{native} \\
+\textbf{Azeri} & \scalebox{0.9}{native} \\
+\textbf{English} & \scalebox{0.75}{IELTS 7.5 ~•~ TOEFL 94} \\
+\textbf{Russian} & \pictofraction{\faCircle}{cvgreen}{2}{black!30}{2}{\tiny} \\
+\textbf{Italian} & \pictofraction{\faCircle}{cvgreen}{1}{black!30}{3}{\tiny}
+\end{tabular}
+
+\bigskip
+
+\bg{cvgreen}{white}{Interests}\\[0.5em]
+
+\texttt{Cycling}~•~\texttt{Coding}~•~\texttt{Board Games}
+
+\vspace{4em}
+
+\begin{tabular}{@{}l@{}}
+    \infobubble{\faAt}{cvgreen}{white}{\protect\url{www.enverbashirov.com}} \\
+    \infobubble{\faLinkedin}{cvgreen}{white}{enverbashirov} \\
+    \infobubble{\faGithub}{cvgreen}{white}{enverbashirov} \\
+    \infobubble{\faEnvelope}{cvgreen}{white}{\href{mailto:enver.bashirov@gmail.com}{enver bashirov gmail}} \\
+    \infobubble{\faPhone}{cvgreen}{white}{+39 391 492 4287} \\
+    \infobubble{\faMapMarker}{cvgreen}{white}{Italy, Padova} \\
+\end{tabular}
+\phantom{turn the page}
+
+\phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\small
+\section*{Short Resumé}
+
+\begin{tabular}{r | p{0.5\textwidth} c}
+    \cvevent{2018--2021}{Captain of the Black Pearl}{Lead}{East Indies \color{cvred}}{Finally got the goddamn ship back.\lorem}{img/emu_logo.png} \\
+    \cvevent{2016--2017}{ the Black Pearl}{Lead}{Tortuga \color{cvred}}{Found a secret treasure, lost the ship. \lorem}{img/emu_logo.png}
+\end{tabular}
+\vspace{3em}
+
+\section*{Experience}
+\begin{tabular}{l | p{0.5\textwidth} c}
+    \exevent{2022}{Machine Learning Engineer}{Researcher}{Nokia Bell Labs (Espoo, Finland) \color{cvred}}{Algorithmic peak detection approach for a communication architecture}{Python~•~scikit-learn~•~pandas~•~numpy}{img/nokia_logo.png} \\
+    \exevent{2021}{Deep Learning Engineer}{Researcher}{IMDEA Networks (Madrid, Spain) \color{cvred}}{Person detection and activity recognition architecture built on IEEE802.11 Access Points}{Python~•~TensorFlow~•~PyTorch~•~numpy}{img/imdea_logo.png} \\
+    \exevent{2018}{Full Stack Developer}{Research Assistant}{\href{https://www.emu.edu.tr/en}{EMU} (Famagusta, Cyprus)\color{cvred}}{Front/Back-end design for university website and internal features}{C\#~•~ASP.NET~•~NodeJs~•~AngularJS~•~TypeScript~•~MySQL}{img/emu_logo.png}
+\end{tabular}
+\vspace{3em}
+
+\begin{minipage}[t]{0.35\textwidth}
+\section*{Education}
+\begin{tabular}{r | p{0.6\textwidth} c}
+    \cvdegree{2023}{Information Engineering}{Ph.D}{\href{https://www.unipd.it}{\mbox{University of Padova}} \color{headerblue}}{Italy, Padova}{img/unipd_logo.png} \\
+    \cvdegree{2019}{Computer Science}{MSc.}{\href{https://www.emu.edu.tr/en}{EMU} \color{headerblue}}{Cyprus, Famagusta}{img/emu_logo.png} \\
+    \cvdegree{2017}{Computer Engineering}{BSc.}{\href{https://www.bilkent.edu.tr/}{Bilkent University} \color{headerblue}}{Turkey, Ankara}{img/bilkent_logo.png}
+\end{tabular}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Skills}
+\begin{tabular}{r @{\hspace{0.15em}}l}
+     \bg{skilllabelcolour}{iconcolour}{Python} &  \barrule{0.45}{0.5em}{cvgreen}\\
+     \bg{skilllabelcolour}{iconcolour}{\LaTeX} & \barrule{0.40}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{Linux~•~Git} & \barrule{0.35}{0.5em}{cvgreen} \\
+     \bg{skilllabelcolour}{iconcolour}{C\#~•~.NET} & \barrule{0.3}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{NodeJS~•~TS} & \barrule{0.15}{0.5em}{cvpurple} \\
+     \bg{skilllabelcolour}{iconcolour}{MySQL} & \barrule{0.1}{0.5em}{cvpurple} \\
+     % \bg{skilllabelcolour}{iconcolour}{HDL} & \barrule{0.4}{0.5em}{cvgreen} \\
+     
+\end{tabular}
+\end{minipage}
+
+
+% \begin{minipage}[t]{0.3\textwidth}
+% \section*{Grants}
+% \begin{tabular}{>{\footnotesize\bfseries}l | >{\footnotesize}p{0.30\textwidth} >{\footnotesize}p{0.25\textwidth}}
+
+%     20 - 23 & EU Horizon 2020 MSCA & ESR (Grant No: 861222) \\
+%     19 - 20 & EU Scholarship for Turkish Cypriots & \mbox{PG-NON EU} \mbox{Funding: 8 000 Euros} \\
+%     18 - 19 & Facial Emotion Recognition with Deep Learning in Videos & \mbox{\href{https://www.emu.edu.tr/en}{EMU} (BAP-C-02-18-01)} \mbox{Funding: 10 000 Turkish Lira}
+
+% \end{tabular}
+% \bigskip
+
+% \begin{minipage}[t]{0.5\textwidth}
+
+\bigskip
+
+% \section*{Talks}
+% \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.6\textwidth}}
+%     Nov. 1726 & ``How I lost my ship (\& and how to get it back)'', at: \emph{Annual Pirate's Conference} in Tortuga, Nov. 1726.
+% \end{tabular}
+% \end{minipage}
+
+
+\vfill % Whitespace before final footer
+\eject
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+% \setlength{\parindent}{0pt}
+% \begin{minipage}[t]{\rightcolwidth}
+% \begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+% {\small
+% \icon{\faEnvelope}{cvgreen}{} enver.bashirov at gmail.com 
+% \icon{\faMapMarker}{cvgreen}{} Italy, Padova 
+% \icon{\faPhone}{cvgreen}{} +39 391 492 42 87 \newline
+% \icon{\faAt}{cvgreen}{} \protect\url{enverbashirov.com}
+% }
+% \end{center}
+% \end{minipage}
+
+\end{paracol}
+
+\clearpage
+
+\section*{Publications}
+\begin{tabular}{l | >{\footnotesize}p{0.9\textwidth}}
+
+    2023 & Pegoraro, J., Lacruz, J. O., Meneghello, F., \textbf{Bashirov, E.}, Rossi, M., \& Widmer, J. (2023). \emph{RAPID: Retrofitting IEEE 802.11ay access points for indoor human detection and sensing.} IEEE Transactions on Mobile Computing. \\
+    
+    2022 & \textbf{Bashirov, E.}, Canil, M., \& Rossi, M. (2022, December). \emph{RadNet: a testbed for mmwave radar networks.} In Proceedings of the 1st International Workshop on Emerging Topics in Wireless (pp. 1-5). \\
+    
+    2022 & Shastri, A., Valecha, N., \textbf{Bashirov, E.}, Tataria, H., Lentmaier, M., Tufvesson, F., ... \& Casari, P. (2022). \emph{A review of millimeter wave device-based localization and device-free sensing technologies and applications.} IEEE Communications Surveys \& Tutorials, 24(3), 1708-1749. \\
+    
+    2021 & Hajarolasvadi, N., \textbf{Bashirov, E.}, \& Demirel, H. (2021). \emph{Video-based person-dependent and person-independent facial emotion recognition.} Signal, Image and Video Processing, 15, 1049-1056. \\
+
+    2020 & Pegoraro, J., Solimini, D., Matteo, F., \textbf{Bashirov, E.}, Meneghello, F., \& Rossi, M. (2020, September). \emph{Deep learning for accurate indoor human tracking with a mm-wave radar.} In 2020 IEEE Radar Conference (RadarConf20) (pp. 1-6). IEEE. \\
+
+\end{tabular}
+
+\bigskip
+
+\section*{Grants}
+\begin{tabular}{c | >{\footnotesize}p{0.55\textwidth} >{\footnotesize}p{0.25\textwidth}}
+
+    2020 -- 2023 & EU Horizon 2020 Marie Skladowska Curie Action & ESR (Grant No: 861222) \\
+    2019 -- 2020 & EU Scholarship for Turkish Cypriots \mbox{PG-NON EU} & \mbox{Funding: 8 000 Euros} \\
+    2018 -- 2019 & \mbox{EMU (BAP-C-02-18-01)} Facial Emotion Recognition with Deep Learning in Videos & \mbox{Funding: 10 000 Turkish Lira}
+
+\end{tabular}
+
+\bigskip
+
+
+\section*{Projects}
+
+\begin{longtable}{l | p{0.8\textwidth} c}
+    \exevent{2018}{\href{http://envanter.emu.edu.tr/} {Inventory Classification}}{\textit{Assignment}}{\href{https://www.emu.edu.tr/en}{EMU} Computer Center (Famagusta, Cyprus) \color{cvred}}{A platform with add, update, delete and report functionality for EMU's infrastructural details (University plot area, Building oxygen levels, Classroom student capacities etc.}{Angular 7~•~ASP.NET~•~Core 2.2~•~C\#~•~MS-SQL}{img/emu_logo.png} \\
+
+    \exevent{2018}{\href{http://stat.emu.edu.tr/}{University Stats Reporter}}{\textit{Assignment}}{\href{https://www.emu.edu.tr/en}{EMU} Computer Center (Famagusta, Cyprus) \color{cvred}}{A web-site/platform for displaying statistical student, program, department, faculty information since the year of establishment of EMU}{ASP.NET 4~•~C\#~•~MVC}{img/emu_logo.png} \\
+    
+    \exevent{2018}{Android Student Portal}{\textit{Assignment}}{\href{https://www.emu.edu.tr/en}{EMU} Computer Center (Famagusta, Cyprus) \color{cvred}}{A platform for EMU students to check their academic information through an android application}{Android Studio~•~Java}{img/emu_logo.png} \\
+
+    \exevent{2018}{\href{http://metuschedular.enverbashirov.com}{METUSchedular}}{\textit{Side Project}}{}{A timetable creator/schedular web application designed for visualizing courses in Middle East Technical University. Easy to use, user friendly interface with quality of life functionalities aimed to assist METU students in their course selection period.}{NodeJs~•~Angular~•~TypeScript}{img/metu_schedular_logo.png} \\
+
+    \exevent{2018}{\href{https://github.com/enverbashirov/Distributed.Parallel.OddEven.Sum}{Odd/Even Sum Computation}}{\textit{MSc. Course Project}}{}{Parallel (multi-threaded) and distributed (concurrent computation with two machines via socket programming), odd/even prefix algorithm to compute overall sum}{C++~•~sockets~•~threading}{img/icons/calculator-solid.png} \\
+
+    \exevent{2017}{\href{https://github.com/enverbashirov/Image.Segmentation.Superpixels}{Image Segmentation using SuperPixels}}{\textit{BSc. Course Project}}{}{Image segmentation by using superpixels, Gabor Convolution, K-Means segmentation. 10 768 by 512 sample images were used for training and 1 1080 by 1919 image was used for testing. As a conclusion, larger superpixel count gave better results in the Simple Linear Iterative Clustering algorithm}{MATLAB~•~K-Means~•~SLIC}{img/icons/images-solid.png} \\
+
+    \exevent{2017}{\href{https://bitbucket.org/enverbashirov/networdclient}{NetWord}}{\textit{BSc. Graduation Project}}{}{A Social networking platform for text based games. Users are categorized by analyzing inputs from the text based games and the user-matching done through this categorization, allowing users to be matched with similar views, thoughts and personalities giving an enhanced user-experience. Developed on Android Studio with Google FIREBASE}{Android Studio~•~Java~•~FIREBASE}{img/nwlogo.png} \\
+
+    \exevent{2016}{\href{https://github.com/enverbashirov/StickMan.Animation}{StickMan Animation}}{\textit{BSc. Course Project}}{}{Stickman figure and animation with realistic but simple human-like movement. Implemented with WebGL including integrated shaders etc.}{WebGL}{img/icons/person-solid.png} \\
+    
+    \exevent{2016}{\href{https://github.com/enverbashirov/Static.Memory.Management}{Static Memory Management}}{\textit{BSc. Course Project}}{}{Raw memory management in C. Static library for creating an allocated segment, memory allocation, memory deallocation and displaying the segment information. An alternative memory allocation library using only pointers with manual address management}{C}{img/icons/memory-solid.png} \\
+    
+    \exevent{2016}{I/O Testing}{\textit{Intern Assignment}}{\href{https://ones.com.tr/en/}{ONES Technology} (Ankara, Turkey) \color{cvred}}{A system for displaying test results such as user inputs, account details, processed data information, final output etc. Data pushed by server side file was previewed in client-side page. Usage of Global Variables (GET, POST, SESSION etc.)}{PHP~•~MYSQL}{img/icons/microscope-solid.png} \\
+    
+    \exevent{2016}{Server Logging}{\textit{Intern Assignment}}{\href{https://ones.com.tr/en/}{ONES Technology} (Ankara, Turkey) \color{cvred}}{Displaying server errors, warnings and logs. JAX-WS enables realtime browser supported preview of logs in the Glassfish server.}{JAX-WS~•~Glassfish}{img/icons/book-open-solid.png} \\
+    
+    \exevent{2015}{System Room Design}{Intern Assignment}{\href{https://www.fujitsu.com/global/}{Fujitsu Technology Solutions} (Ankara, Turkey) \color{cvred}}{Transferring and updating of old system room into a new location. Usage of; public and local, wireless and wired network management, central data traffic management, firewall configuration, data backup management, satellite connector and controller configuration etc.}{}{img/icons/server-solid.png} \\
+
+
+\end{longtable}
+% \vspace{3em}
+
+\bigskip
+
+\end{document}
