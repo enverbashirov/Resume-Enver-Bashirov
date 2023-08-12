@@ -114,7 +114,15 @@
 \newcommand{\lorem}{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus.} % Dummy text
 
 %--------------------------------------------------- pictures
-\newcommand{\roundpic}[1]{\begin{figure}[H]\tikz  \draw [path picture={ \node at (path picture bounding box.center){\includegraphics[height=3.5cm]{#1}} ;}] (0,2) circle (1.7) ;\end{figure}}
+\newcommand{\roundpic}[1]{
+    \begin{tikzpicture}
+        % \draw[red,thick,dashed] (0, 2) circle (1.8);
+        % \draw (-1.7,0.3) -- (1.7, 0.3) -- (1.7, 3.7) -- (-1.7, 3.7) -- (-1.7, 0.3);
+        % \draw [step=1cm,gray,very thin] (-1.7, 0.3) grid (1.7, 3.7);
+        \draw [path picture={\node at (path picture bounding box.center){\includegraphics[height=3.5cm]{#1}} ;}] 
+        (0,2) circle (1.7);
+    \end{tikzpicture}
+}
 
 \newcommand{\squarepic}[1]{\begin{figure}[H]\tikz  \draw [path picture={ \node at (path picture bounding box.center){\includegraphics[height=4cm]{#1}} ;}] (0,0) - - (-2,2) - - (0,4) - - (2,2) - - cycle ;\end{figure}}
 
