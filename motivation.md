@@ -1,0 +1,11 @@
+I am an AI Engineer with a strong background in designing, building, and operationalizing AI systems that deliver measurable business value. My experience spans the full lifecycle of AI solutions, from translating business objectives into technical strategies to hands-on implementation, deployment, and long-term operation in production environments.
+
+In my current role as **Lead AI Engineer**, I defined and executed the AI roadmap for a SaaS product, working across strategic, tactical, and operational levels. Building on this foundation, I have continued to operate broadly as an AI Engineer, contributing to solution design, system architecture, and end-to-end delivery of production-grade AI solutions centered around Large Language Models, generative AI, and automation. My work includes Retrieval-Augmented Generation pipelines, semantic and hybrid search systems, multi-agent workflows, and the integration of both commercial and open-source LLM APIs into scalable software systems.
+
+From an operational perspective, I am deeply hands-on. I develop Python-based AI components and data pipelines, execute model training and fine-tuning, design evaluation and monitoring strategies, and ensure reliable deployment through modern MLOps and DevOps practices. In parallel, I have strong experience with cloud infrastructure, containerization, CI/CD, and infrastructure-as-code, allowing me to deliver AI solutions that are robust, cost-efficient, and maintainable in real-world environments.
+
+Beyond implementation, I regularly operate at a solution-design level. I work closely with both technical and non-technical stakeholders to translate complex problems into clear experiments, delivery plans, and scalable architectures. This enables me to contribute effectively in environments that require both strategic thinking and practical execution.
+
+I am motivated by roles where AI is applied to real business problems, where ownership and responsibility are valued, and where I can contribute flexibly across different levels depending on project needs. I bring a combination of strong technical depth, delivery focus, and leadership experience, with a clear emphasis on building AI systems that are reliable, impactful, and aligned with business objectives.
+
+Enver Bashirov
